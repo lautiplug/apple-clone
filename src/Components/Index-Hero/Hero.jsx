@@ -12,6 +12,11 @@ export const Hero = () => {
     window.scrollTo(0, 0);
   }, []); 
 
+  // Title
+  const title = "Apple Clone"
+  useEffect(() => {
+    document.title = title
+  }, [])
 
   return (
     <section>

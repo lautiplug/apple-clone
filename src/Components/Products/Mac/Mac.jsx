@@ -20,6 +20,12 @@ export const Mac = () => {
       });
   }, []);
 
+  // Title
+  const title = "Mac - Apple Clone"
+  useEffect(() => {
+    document.title = title
+  }, [])
+
   return (
     <>
       <TextHero>

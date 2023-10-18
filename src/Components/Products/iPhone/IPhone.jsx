@@ -20,6 +20,12 @@ export const IPhone = () => {
       });
   }, []);
 
+  // Title
+  const title = "iPhone - Apple Clone"
+  useEffect(() => {
+    document.title = title
+  }, [])
+
   return (
     <main className="iphone-main">
       <section className="iphone-header">
@@ -102,41 +108,6 @@ export const IPhone = () => {
         <a href="/">Compare all iPhone models {">"}</a>
         <a href="/">Shop iPhone {">"}</a>
       </div>
-
-{/*       <article className="save-money-main">
-        <SaveMoney
-          img={"https://i.ibb.co/qms9Gjw/icon-delivery-f4vnk0swb0eq-large.png"}
-          alt={"icon-delivery"}
-          title={"Fast, free delivery"}
-          text={"Or pick up available items at an Apple Store."}
-          link={"Learn More > "}
-        />
-        <SaveMoney
-          img={"https://i.ibb.co/tBgrkjN/icon-financing-cz6p4nvq3a4i-large.png"}
-          alt={"icon-financing"}
-          title={"Pay monthly at 0% APR"}
-          text={"You can pay over time when you choose to check out with Apple Card Monthly Installments.**"}
-          link={"Learn More > "}
-        />
-        <SaveMoney
-          img={"https://i.ibb.co/b61LdNT/icon-personal-session-e6a44cdlylm6-large.png"}
-          alt={"icon-delivery"}
-          title={"Get help buying"}
-          text={"Have a question? Call a Specialist or chat online. Call 1‑800‑MY‑APPLE."}
-          link={"Learn More > "}
-        />
-      </article>
-
-      <p className="ios-title-section">What makes an iPhone an iPhone?</p>
-
-      <div className="ios-17-row">
-        <div className="ios-17-details">
-          <h3>iOS 17</h3>
-          <p>Every day. More extraordinary.</p>
-          <a href="/">Learn More {">"}</a>
-        </div>
-        <img src="https://i.ibb.co/ZGHFPgp/ios17-glwsbqdnc6um-large.jpg" />
-      </div> */}
     </main>
   );
 };

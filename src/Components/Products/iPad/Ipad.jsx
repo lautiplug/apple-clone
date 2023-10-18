@@ -11,6 +11,13 @@ export const Ipad = () => {
     window.scrollTo(0, 0);
   }, []);
 
+  // Title
+  const title = "iPad - Apple Clone"
+  useEffect(() => {
+    document.title = title
+  }, [])
+  
+
   const [ipadData, setIpadData] = useState([]);
 
   useEffect(() => {
@@ -27,6 +34,7 @@ export const Ipad = () => {
 
   return (
     <>
+    {/* Need to add mobile styles */}
       {/* <TextHero>
         Get 3% Daily Cash back with Apple Card. And pay for your new iPad over
         12 months, interest-free when you choose to check out with Apple Card
