@@ -1,0 +1,523 @@
+/* text hero */
+.ac-ribbon__bts-2023-content-wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: #f5f5f7;
+  padding-top: 0.94118em;
+  padding-bottom: 0.94118em;
+}
+.ac-ribbon__bts-2023-content {
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+}
+
+.ac-ribbon__bts-2023-container {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.ac-ribbon__bts-2023-content-copy {
+  text-align: center;
+}
+
+.bts-2023-footnote {
+  font-size: 10px;
+  position: relative;
+  vertical-align: top;
+  color: inherit;
+}
+.footnote a {
+  vertical-align: inherit;
+  color: inherit;
+}
+
+.ribbon-link {
+  white-space: nowrap;
+}
+
+.icon-copy {
+  margin-left: 10px;
+}
+
+/* text hero */
+
+.section-hero-product {
+  background-color: #fbfbfd;
+  border-bottom: 10px solid #fff;
+  padding: 59px 0;
+  display: flex;
+  flex-direction: column;
+}
+.section-content {
+  align-items: center;
+  text-align: center;
+}
+.product-wrapper {
+  min-height: 672px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-wrapper h2 {
+  font-weight: 600;
+  color: #1d1d1f;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.section-hero-product .violator-frameless {
+  background: rgba(0, 0, 0, 0);
+  border-color: #bf4800;
+  color: #f56300;
+}
+
+.typography-body {
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+}
+
+.typography-hero-product-headline {
+  font-size: 56px;
+  line-height: 1.07143;
+  font-weight: 600;
+  letter-spacing: -0.005em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+}
+
+.section-hero-product .hero-eyebrow {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.section-hero-product .hero-copy {
+  margin-top: 0;
+}
+
+.typography-callout {
+  font-size: 32px;
+  line-height: 1.125;
+  font-weight: 400;
+  letter-spacing: 0.004em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+}
+
+.hero-pricing {
+  margin-top: 0.8em;
+}
+
+.hero-price {
+  margin-top: 0.85em;
+}
+
+.section-hero-product .cta-links {
+  margin-top: 14px;
+  position: relative;
+  z-index: 1;
+}
+
+.link-container {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.typography-hero-product-link {
+  font-size: 21px;
+  line-height: 1.381;
+  font-weight: 400;
+  letter-spacing: 0.011em;
+  font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+}
+
+.typography-hero-product-link a {
+  text-decoration: none;
+}
+
+/* selection button */
+
+.mac-select-specs{
+  width: 100%;
+}
+
+.button {
+  width: 60px;
+  cursor: pointer;
+  display: inline-block;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 17px;
+  line-height: 1.17648;
+  font-weight: 400;
+  letter-spacing: -0.022em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+  min-width: 28px;
+  padding-left: 15px;
+  padding-right: 16px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  border-radius: 980px;
+  background: #0071e3;
+  color: #fff;
+}
+
+.footnote a {
+  vertical-align: inherit;
+  color: inherit;
+  text-decoration: none;
+}
+
+.footnote a:hover {
+  color: #0071e3;
+}
+
+a.icon-wrapper {
+  text-decoration: none;
+  color: #0071e3;
+}
+
+a.icon-wrapper:hover {
+  text-decoration: underline;
+}
+
+.mac-detail-main {
+  width: 75%;
+}
+
+.mac-img-detail {
+  width: 50%;
+}
+
+.mac-detail-h3 {
+  align-self: flex-start;
+}
+
+.rf-configuration-productsummary {
+  margin-bottom: 15px;
+  width: 100%;
+}
+.rf-configuration-subheader {
+  list-style: none;
+  margin: 0;
+  padding-top: 12px;
+}
+.typography-body-reduced {
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  font-family: SF Pro Text, SF Pro Icons, AOS Icons, Helvetica Neue, Helvetica,
+    Arial, sans-serif;
+  align-self: flex-start;
+}
+
+.rf-configuration-subheader li {
+  margin-bottom: 11px;
+}
+
+/* Text hero */
+
+.section-hero-product .hero-image-wrapper {
+  margin-top: auto;
+}
+
+.large-12 {
+  flex-basis: 100%;
+  max-width: 100%;
+}
+
+.section-hero-product img {
+  margin-bottom: 77px;
+}
+
+/* mac detail info */
+
+@media (width < 1255px) {
+
+  .mac-detail-main{
+    width: 70%;
+  }
+
+  .mac-detail-article{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+
+  .mac-detail-info{
+    width: 100% !important;
+  }
+
+  .rf-configuration-productsummary{
+    align-self: flex-end;
+  }
+
+  .rf-configuration-productsummary div {
+    align-self: flex-start;
+  }
+}
+
+@media (width < 1000px) {
+  .typography-hero-product-headline {
+    font-size: 46px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif;
+  }
+
+  .typography-callout {
+    font-size: 26px;
+    line-height: 1.125;
+    font-weight: 400;
+    letter-spacing: 0.004em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif;
+  }
+
+  .section-hero-product img {
+    width: 624px;
+    height: auto;
+    background-size: 694px 130px;
+    margin-top: 50px;
+    margin-bottom: 0px;
+  }
+}
+
+@media (width < 800px) {
+  .mac-detail-main{
+    margin-top: 20px;
+    width: 90%;
+  }
+
+  .mac-img-detail {
+    width: 70%;
+  }
+
+  .mac-detail-h1{
+    font-size: 42px !important;
+  }
+}
+
+@media (width < 736px) {
+  .typography-hero-product-headline {
+    font-size: 44px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif;
+  }
+
+  .typography-callout {
+    font-size: 25px;
+    line-height: 1.125;
+    font-weight: 400;
+    letter-spacing: 0.004em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif;
+  }
+
+  .section-hero-product img {
+    width: 494px;
+    height: auto;
+    background-size: 694px 130px;
+  }
+
+  .section-hero-product .hero-image-wrapper {
+    margin-top: 50px;
+  }
+
+  .product-wrapper {
+    min-height: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+@media (width < 520px) {
+  .ac-ribbon__bts-2023-content-copy {
+    font-size: 12px;
+  }
+
+  .section-hero-product img {
+    width: 294px;
+    height: auto;
+    background-size: 694px 130px;
+  }
+
+  .section-hero-product {
+    background-color: #fbfbfd;
+    border-bottom: 10px solid #fff;
+    padding: 59px 0px 0px 0px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .mac-h2{
+    font-size: 20px;
+  }
+}
+
+@media (width < 390px) {
+  .typography-callout {
+    width: 50%;
+    font-size: 22px;
+    line-height: 1.125;
+    font-weight: 400;
+    letter-spacing: 0.004em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif;
+  }
+
+  .section-hero-product img {
+    width: 224px;
+    height: auto;
+    background-size: 694px 130px;
+  }
+
+}
+
+@media (width < 320px) {
+  .typography-hero-product-headline {
+    font-size: 34px;
+    line-height: 1.07143;
+    font-weight: 600;
+    letter-spacing: -0.005em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif;
+  }
+
+  .typography-callout {
+    font-size: 18px;
+    line-height: 1.125;
+    font-weight: 400;
+    letter-spacing: 0.004em;
+    font-family: "SF Pro Display", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+      "Arial", sans-serif;
+  }
+}
+
+/* Macbook layout */
+
+.mac-layout-card-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.mac-specs-5 {
+  min-height: 100px;
+}
+
+.macbook-specs-container {
+  gap: 0px;
+}
+
+.mac-specs-9 {
+  min-height: 200px;
+}
+
+.mac-specs10 {
+  min-height: 100px;
+}
+
+.mac-specs-col {
+  font-size: 14px;
+  font-family: "SF-Light";
+  font-weight: lighter;
+  color: #1d1d1f;
+}
+.mac-description-col {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  align-items: center;
+  height: 140px;
+}
+
+.iphone-ordering-col div {
+  margin-bottom: 12px;
+}
+
+.iphone-ordering-col h3 {
+  font-size: 14px;
+  line-height: 1.42859;
+  font-weight: 400;
+  letter-spacing: -0.016em;
+  font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica",
+    "Arial", sans-serif;
+}
+
+@media (width < 734px) {
+  .mac-img {
+    width: 115px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .iphone-ordering-col div {
+    width: 50%;
+  }
+
+  .mac-ordering-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    margin-top: 0px;
+  }
+
+  .mac-description-col h1 {
+    width: 60%;
+  }
+
+  .mac-ordering-col p {
+    width: 60%;
+    font-size: 15px;
+  }
+}
+
+@media (width < 645px) {
+  .iphone-ordering-col div {
+    width: 80%;
+  }
+
+  .mac-description-col h1 {
+    width: 100%;
+  }
+
+  .mac-description-col h2 {
+    width: 100%;
+  }
+
+  .mac-ordering-col p {
+    width: 80%;
+    font-size: 13px;
+  }
+
+  .iphone-ordering-col h3 {
+    font-size: 14px;
+  }
+}
+
+/* Macbook layout */

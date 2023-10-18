@@ -1,0 +1,34 @@
+@font-face {
+  font-family: "SF-Normal";
+  src: url(../src/Font/SFUIText-Regular.otf) format("truetype");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "SF-Light";
+  src: url(../src/Font/SFNSDisplay-Light.otf) format("truetype");
+  font-display: swap;
+}
+
+:root {
+  --clr-text-white: #f5f5f7;
+  --clr-text-gray: #86868B;
+  --clr-text-red: #D11718;
+  --clr-link-skb: #2997ff;
+  --clr-text-black: #111111;
+}
+
+* {
+  font-family: 'SF-Normal';
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+div:where(.swal2-container).swal2-center>.swal2-popup {
+  width: 80%;
+}
+
+div:where(.swal2-container) .swal2-html-container {
+  text-align: left;
+}

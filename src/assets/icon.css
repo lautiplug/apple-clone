@@ -1,0 +1,13 @@
+.apple-hero{
+  width: 56px;
+  height: 56px;
+  align-items: center;
+}
+
+@media (width < 735px) {
+  .apple-hero{
+    width: 45px;
+    height: 45px;
+    align-items: center;
+  }
+}

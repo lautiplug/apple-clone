@@ -1,0 +1,28 @@
+export const iPadImages = [
+  {
+    id: 1,
+    img: "https://i.ibb.co/LRgZpDn/ipad-pro-hero-bh3eq6sqfjw2-large-2x.jpg",
+    New: "New",
+    title: "iPad Pro",
+    subtitle: "Supercharged by M2",
+    price: 799,
+    bgc: "#000",
+    width: "100%",
+    height: "854px",
+    placeItems: "start center",
+    textColor: "#fff"
+  },
+  {
+    id: 2,
+    img: "https://i.ibb.co/hCqvq1c/ipad-hero-d0tgmaq6shm6-large-2x.jpg",
+    New: "New",
+    title: "iPad",
+    subtitle: "Lovable. Drawable. Magical",
+    price: 499,
+    bgc: "#fff",
+    width: "auto",
+    height: "700px",
+    placeItems: "center center",
+    textColor: "#1d1d1f"  
+  }
+]

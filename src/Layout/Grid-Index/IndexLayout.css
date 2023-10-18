@@ -1,0 +1,150 @@
+.card-layout {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+  gap: 8px;
+  margin: auto;
+  align-items: center;
+}
+
+.card-l {
+  width: 100%;
+  height: auto;
+  box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.card-picture img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+}
+
+.card-info-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.card-layout-h1{
+  font-size: 28px;
+}
+
+.card-layout-p{
+  font-size: 15px;
+  color: var(--clr-text-gray);
+  text-align: center;
+  font-family: "SF-Light";
+}
+
+.card-layout-link{
+  text-decoration: none;
+  color: var(--clr-link-skb);
+}
+
+.card-layout-link:hover{
+  text-decoration: underline;
+}
+
+/* Trade / Info */
+
+.trade-buy-info {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  margin: auto;
+  gap: 8px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* iphone-cuotas-trade-flex */
+
+.iphone-cuotas-trade-flex{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: center;
+  width: 100%;
+  gap: 8px;
+}
+
+.iphone-cuotas-h1{
+  font-size: 35px;
+}
+
+.iphone-cuotas-p{
+  font-size: 18px;
+  width: 100%;
+}
+
+.iphone-cuotas-link{
+  font-size: 16px;
+  color: var(--clr-link-skb);
+  text-decoration: none;
+}
+
+.iphone-cuotas-link:hover{
+  text-decoration: underline;
+}
+
+.img-brain-face-section{
+  width: 100%;
+}
+
+@media (width < 1463px) {
+  .card-layout {
+    width: 85%;
+  }
+
+  .trade-buy-info {
+    width: 85%;
+  }
+}
+
+@media (width < 1035px) {
+  .card-layout {
+    width: 90%;
+  }
+
+  .trade-buy-info {
+    width: 90%;
+  }
+}
+
+@media (width < 1035px) {
+  .card-layout {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  }
+}
+
+@media (width < 800px) {
+  .trade-buy-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .iphone-cuotas-p{
+    font-size: 18px;
+    width: 90%;
+  }
+
+  .img-brain-face{
+    display: none;
+  }
+}
+
+@media (width < 480px){
+  .card-layout {
+    width: 95%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  }
+}

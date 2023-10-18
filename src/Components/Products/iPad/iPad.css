@@ -1,0 +1,185 @@
+.ipad-card {
+  display: grid;
+  grid-area: "content";
+}
+
+.ipad-card img {
+  height: 700px;
+  grid-area: content;
+  object-fit: contain;
+}
+
+.ipad-details {
+  color: var(--clr-text-white);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  grid-area: content;
+  gap: 5px;
+  margin-top: 100px;
+  z-index: 1;
+  margin-left: 50px;
+}
+
+.ipad-content-description {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.ipad-buttons {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ipad-buttons a {
+  color: #2997ff;
+  text-decoration: none;
+}
+
+.ipad-details p {
+  font-size: 12px;
+  color: #f56300;
+  text-align: center;
+}
+
+.ipad-details h1 {
+  font-size: 56px;
+}
+
+.ipad-details h2 {
+  width: 95%;
+  font-size: 20px;
+  line-height: 1.16667;
+  font-weight: 600;
+  letter-spacing: 0.009em;
+}
+
+.ipad-details h3{
+  font-size: 17px;
+  line-height: 1.47059;
+  font-weight: 400;
+  letter-spacing: -.022em;
+}
+
+.ipad-buy-btn{
+  padding: 8px 0px 8px 0px;
+  border: none;
+}
+
+/* Layout */
+.card-ipad-layout{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.ipad-layout-card-container picture{
+  height: 200px;
+}
+
+.ipad-col-description h2{
+  font-size: 14px;
+}
+
+.ipad-ordering-col p{
+  font-size: 14px;
+}
+
+.screen-title, .ipad-chip-title{
+  width: 100%;
+  font-size: 12px;
+  letter-spacing: 0.6px;
+}
+
+.mac-specs-col{
+  width: 100%;
+  padding-top: 8px;
+  font-size: 12px;
+}
+
+.specs10 picture {
+  height: 50px;
+}
+
+.ipad-security-ss{
+  margin-top: 5px;
+  width: 100%;
+}
+
+.ipad-grid-3{
+  margin-bottom: 30px;
+}
+
+.ipad-grid-3 picture{
+  height: 50px;
+}
+
+.ipad-usb-grid{
+  gap: 8px;
+}
+
+.ipad-screen-material{
+  width: 80%;
+  font-size: 13px;
+}
+
+.specs6 picture {
+  height: 72px;
+}
+
+.specs7 picture {
+  height: 72px;
+}
+
+.ipad-specs-kb{
+  width: 80%;
+}
+
+.ipad-specs-pencil{
+  width: 80%;
+}
+
+@media (width < 1067px) {
+  .card-ipad-layout{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .ipad-img{
+    object-fit: contain;
+    margin: 0 auto;
+  }
+
+  .ipad-col-description h2 {
+    font-size: 12px;
+  }
+
+  .ipad-ordering-col p {
+    font-size: 12px;
+  }
+
+  .ipad-link{
+    font-size: 14px;
+  }
+
+  .ipad-screen-h2{
+    font-size: 21px;
+  }
+}
+
+@media (width < 1067px) {
+  .ipad-title-section h2{
+    font-size: 24px;
+  }
+
+  .compare a {
+    font-size: 17px;
+  }
+}
+/* Layout */
