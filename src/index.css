@@ -26,7 +26,8 @@
 }
 
 div:where(.swal2-container).swal2-center>.swal2-popup {
-  width: 80%;
+  width: 90%;
+  height: 500px;
 }
 
 div:where(.swal2-container) .swal2-html-container {

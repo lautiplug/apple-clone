@@ -10,15 +10,16 @@ import { MacBuyDetail } from "../Components/Products/Mac/MacBuyDetail";
 import { Ipad } from "../Components/Products/iPad/Ipad";
 
 export const AppRoutes = () => {
+  
   return (
     <CartProvider value={"ll"}>
       <Navbar />
       <Routes>
-        <Route exact path="/" element={<Hero />} />
-        <Route exact path="/shop/iphone" element={<IPhone />} />
-        <Route exact path="/shop/ipad" element={<Ipad />} />
+        <Route exact path="/" element={<Hero title={"Apple Clone > Home"}/>} />
+        <Route exact path="/shop/iphone" element={<IPhone title={"Apple Clone > iPhone"}/>} />
+        <Route exact path="/shop/ipad" element={<Ipad title={"Apple Clone > iPad"}/>} />
         <Route exact path="/shop/iphone/:id" element={<IphoneBuyDetail/>}/>
-        <Route exact path="/shop/mac" element={<Mac />} />
+        <Route exact path="/shop/mac" element={<Mac title={"Apple Clone > Mac"}/>} />
         <Route exact path="/shop/macbook/:id" element={<MacBuyDetail/>}/>
         <Route exact path="/shop/bag" element={<CartDetail/>}/>
         <Route />

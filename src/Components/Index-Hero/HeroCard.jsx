@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useMediaQuery } from "../../Services/useMediaQuery";
+import { useMediaQuery } from "../../utils/useMediaQuery";
 
 export const HeroCard = ({ img, imgMV, id, height, title, subTitle, link, appleLogo, series9, order, color}) => {
 

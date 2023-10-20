@@ -1,4 +1,4 @@
-import { imgs } from "../../Services/LayoutIndex";
+import { imgs } from "../../utils/LayoutIndex";
 import { BrainExplodingEmoji } from "../BrainExplodingEmoji";
 import { HowToBuy } from "../HowToBuy";
 import { CardLayout } from "./CardLayout";

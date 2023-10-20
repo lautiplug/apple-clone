@@ -4,10 +4,10 @@ window.addEventListener("DOMContentLoaded", function() {
 
   if (!notificationShown) {
   Swal.fire({
-    title: "Thanks for using my website!",
+    title: "Please read this carefully.",
     html: `<b>Privacy Policy:</b><br>
         <br>
-        Last update: 10/2023 <br> <br>Welcome to Non-Official Apple Reseller (Educational Purposes).<br> <br>
+        Last update: 10/2023 <br> <br>Welcome to Apple Clone (Educational Purposes).<br> <br>
         In this site, I take your privacy seriously.<br>
         This privacy policy aims to explain how I collect and use information on my website, as well as explaining the purpose of the site.<br> <br>
         <strong>Information Collect: </strong><br>

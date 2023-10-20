@@ -1,10 +1,14 @@
 import { useEffect, useState } from "react";
-import { heroImgs } from "../../../Services/HeroIndex";
+import { heroImgs } from "../../../utils/HeroIndex";
 import { IPhoneHero } from "./IPhoneHero.jsx";
 import { IPhoneLayout } from "./IPhoneLayout";
 import "./iphone.css";
+import { Footer } from "../../Footer/Footer";
 
-export const IPhone = () => {
+export const IPhone = ({ title }) => {
+  // Title
+  document.title = title;
+  
   const heroimgs = heroImgs.slice(0, 2);
   const [data, setData] = useState([]);
 
@@ -20,11 +24,6 @@ export const IPhone = () => {
       });
   }, []);
 
-  // Title
-  const title = "iPhone - Apple Clone"
-  useEffect(() => {
-    document.title = title
-  }, [])
 
   return (
     <main className="iphone-main">
@@ -57,57 +56,102 @@ export const IPhone = () => {
       </section>
       {/* iPhone layout */}
       <section className="card-iphone-layout">
-        {data.map(({ id, img, colors, New, title, subTitle, price, buy, learnMore, link, screenSize, iphoneScreen, dynamicIsland, chip, camera, cameraZOOM, SOS, batery, usb, securitySystem, screenDesc1, screenDesc2, screenDesc3, screenMaterial, leftButton, dynamicIslandTitle, dynamicIslandBrand, chipTitle, cameraTitle, cameraSpecs1, cameraSpecs2, cameraSpecs3, SOSTitle, SOSSpecs1, SOSSpecs2, SOSSpecs3, upToBatery, usbType, supportsUsb, securitySystemType }) => (
-          <IPhoneLayout
-            data={data}
-            id={id}
-            key={id}
-            img={img}
-            colorProduct={colors}
-            New={New}
-            title={title}
-            subtitle={subTitle}
-            price={price}
-            buy={buy}
-            learnMore={learnMore}
-            link={link}
-            screenSize={screenSize} 
-            iphoneScreen={iphoneScreen} 
-            dynamicIsland={dynamicIsland} 
-            chip={chip} 
-            camera={camera} 
-            cameraZOOM={cameraZOOM} 
-            SOS={SOS} 
-            batery={batery} 
-            usb={usb} 
-            securitySystem={securitySystem} 
-            screenDesc1={screenDesc1} 
-            screenDesc2={screenDesc2} 
-            screenDesc3={screenDesc3} 
-            screenMaterial={screenMaterial} 
-            leftButton={leftButton} 
-            dynamicIslandTitle={dynamicIslandTitle} 
-            dynamicIslandBrand={dynamicIslandBrand} 
-            chipTitle={chipTitle} 
-            cameraTitle={cameraTitle} 
-            cameraSpecs1={cameraSpecs1} 
-            cameraSpecs2={cameraSpecs2} 
-            cameraSpecs3={cameraSpecs3} 
-            SOSTitle={SOSTitle} 
-            SOSSpecs1={SOSSpecs1} 
-            SOSSpecs2={SOSSpecs2} 
-            SOSSpecs3={SOSSpecs3} 
-            upToBatery={upToBatery} 
-            usbType={usbType} 
-            supportsUsb={supportsUsb} 
-            securitySystemType={securitySystemType}
-          />
-        ))}
+        {data.map(
+          ({
+            id,
+            img,
+            colors,
+            New,
+            title,
+            subTitle,
+            price,
+            buy,
+            learnMore,
+            link,
+            screenSize,
+            iphoneScreen,
+            dynamicIsland,
+            chip,
+            camera,
+            cameraZOOM,
+            SOS,
+            batery,
+            usb,
+            securitySystem,
+            screenDesc1,
+            screenDesc2,
+            screenDesc3,
+            screenMaterial,
+            leftButton,
+            dynamicIslandTitle,
+            dynamicIslandBrand,
+            chipTitle,
+            cameraTitle,
+            cameraSpecs1,
+            cameraSpecs2,
+            cameraSpecs3,
+            SOSTitle,
+            SOSSpecs1,
+            SOSSpecs2,
+            SOSSpecs3,
+            upToBatery,
+            usbType,
+            supportsUsb,
+            securitySystemType,
+          }) => (
+            <IPhoneLayout
+              data={data}
+              id={id}
+              key={id}
+              img={img}
+              colorProduct={colors}
+              New={New}
+              title={title}
+              subtitle={subTitle}
+              price={price}
+              buy={buy}
+              learnMore={learnMore}
+              link={link}
+              screenSize={screenSize}
+              iphoneScreen={iphoneScreen}
+              dynamicIsland={dynamicIsland}
+              chip={chip}
+              camera={camera}
+              cameraZOOM={cameraZOOM}
+              SOS={SOS}
+              batery={batery}
+              usb={usb}
+              securitySystem={securitySystem}
+              screenDesc1={screenDesc1}
+              screenDesc2={screenDesc2}
+              screenDesc3={screenDesc3}
+              screenMaterial={screenMaterial}
+              leftButton={leftButton}
+              dynamicIslandTitle={dynamicIslandTitle}
+              dynamicIslandBrand={dynamicIslandBrand}
+              chipTitle={chipTitle}
+              cameraTitle={cameraTitle}
+              cameraSpecs1={cameraSpecs1}
+              cameraSpecs2={cameraSpecs2}
+              cameraSpecs3={cameraSpecs3}
+              SOSTitle={SOSTitle}
+              SOSSpecs1={SOSSpecs1}
+              SOSSpecs2={SOSSpecs2}
+              SOSSpecs3={SOSSpecs3}
+              upToBatery={upToBatery}
+              usbType={usbType}
+              supportsUsb={supportsUsb}
+              securitySystemType={securitySystemType}
+            />
+          )
+        )}
       </section>
       <div className="compare">
         <a href="/">Compare all iPhone models {">"}</a>
         <a href="/">Shop iPhone {">"}</a>
       </div>
+
+      <Footer title={title} />
     </main>
   );
 };

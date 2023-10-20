@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import "./Mac.css";
-import { useMediaQuery } from "../../../Services/useMediaQuery";
+import { useMediaQuery } from "../../../utils/useMediaQuery";
 
 export const MacHero = ({id, img, New, title, subTitle, price, link, width, height, marginTop}) => {
 

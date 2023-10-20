@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import { useMediaQuery } from "../../../Services/useMediaQuery"
+import { useMediaQuery } from "../../../utils/useMediaQuery"
 import './iphone.css'
 
 export const IPhoneHero = ({ id, img, imgMV, titaniumImg, title, New, pricing, ordering, link, color}) => {

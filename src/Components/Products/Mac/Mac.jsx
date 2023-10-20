@@ -1,11 +1,15 @@
 import { useEffect, useState } from "react";
-import { macHeroImgs } from "../../../Services/MacHero";
+import { macHeroImgs } from "../../../utils/MacHero";
 import { MacHero } from "./MacHero";
 import { TextHero } from "./TextHero";
 import "./Mac.css";
 import { MacLayout } from "./MacLayout";
+import { Footer } from "../../Footer/Footer";
 
-export const Mac = () => {
+export const Mac = ({ title }) => {
+  // Title
+  document.title = title;
+
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -19,12 +23,6 @@ export const Mac = () => {
         console.error("Something went wrong, check out what happened:", error);
       });
   }, []);
-
-  // Title
-  const title = "Mac - Apple Clone"
-  useEffect(() => {
-    document.title = title
-  }, [])
 
   return (
     <>
@@ -154,6 +152,7 @@ export const Mac = () => {
           )
         )}
       </section>
+      <Footer title={title}/>
     </>
   );
 };

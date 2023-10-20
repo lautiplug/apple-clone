@@ -1,23 +1,20 @@
 import { useEffect, useState } from "react";
-import { iPadImages } from "../../../Services/iPadHero/iPadHero";
+import { iPadImages } from "../../../utils/iPadHero/iPadHero";
 import { IpadHero } from "./IpadHero";
 import "./iPad.css";
 import { TextHero } from "../Mac/TextHero";
 import { IpadLayout } from "./IpadLayout";
+import { Footer } from "../../Footer/Footer";
 
-export const Ipad = () => {
+export const Ipad = ({title}) => {
   // Align content to top
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
 
-  // Title
-  const title = "iPad - Apple Clone"
-  useEffect(() => {
-    document.title = title
-  }, [])
+  // page title
+  document.title = title
   
-
   const [ipadData, setIpadData] = useState([]);
 
   useEffect(() => {
@@ -34,8 +31,8 @@ export const Ipad = () => {
 
   return (
     <>
-    {/* Need to add mobile styles */}
-      {/* <TextHero>
+     {/* Need to add mobile styles */}
+       <TextHero>
         Get 3% Daily Cash back with Apple Card. And pay for your new iPad over
         12 months, interest-free when you choose to check out with Apple Card
         Monthly Installments.*
@@ -68,7 +65,7 @@ export const Ipad = () => {
             textColor={textColor}
           />
         )
-      )} */}
+      )} 
 
       <section className="iphone-title-section ipad-title-section">
         <h2>Which iPad is right for you?</h2>
@@ -162,6 +159,7 @@ export const Ipad = () => {
           )
         )}
       </section>
+      <Footer title={title}/>
     </>
   );
 };

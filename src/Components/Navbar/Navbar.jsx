@@ -2,10 +2,12 @@ import { Link } from "react-router-dom";
 import "./Navbar.css";
 import appleLogo from "../../assets/logotipo-de-apple.png";
 import { Cart } from "../Shopping/Cart";
-import { HeaderCartFunctions } from "../../Services/HeaderCartFunctions";
+import { HeaderCartFunctions } from "../../utils/HeaderCartFunctions";
 import { useCartContext } from "../../Context/CartContext";
+import { getInTouch } from "../../utils/getInTouch.js";
 
 export const Navbar = () => {
+  const handleClick = getInTouch();
 
   const {mobileView, menuOpen, cartOpen, toggleCart, toggleMenuOrCart, setCartOpen} = HeaderCartFunctions()
 
@@ -82,11 +84,11 @@ export const Navbar = () => {
             <Link to={"/shop/iphone"}>iPhone</Link>
             <Link to={"/shop/ipad"}>iPad</Link>
             <Link to={"/shop/mac"}>Macbook</Link>
-            <Link>Watch</Link>
-            <Link>Accessories</Link>
+            <Link to={"/soon"}>Watch</Link>
+            <Link to={"/soon"}>Accessories</Link>
             <Link target="_blank" to={"https://lautiplug.netlify.app"}>How I've created this</Link>
             <Link target="_blank" to={"https://github.com/lautiplug"}>Github</Link>
-            <Link>Contact</Link>
+            <Link onClick={handleClick}>Contact</Link>
           </li>
         </ul>
         <section className="side-right-icons">
