@@ -5,7 +5,7 @@
   top: 0;
   -webkit-backdrop-filter: saturate(180%) blur(20px);
   backdrop-filter: saturate(180%) blur(20px);
-  background-color: rgba(22, 22, 23, 0.8);
+  background-color: rgba(22, 22, 23, 0.91);
   z-index: 500;
 }
 

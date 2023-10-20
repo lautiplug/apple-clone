@@ -5,23 +5,42 @@ import { Cart } from "../Shopping/Cart";
 import { HeaderCartFunctions } from "../../utils/HeaderCartFunctions";
 import { useCartContext } from "../../Context/CartContext";
 import { getInTouch } from "../../utils/getInTouch.js";
+import { useMediaQuery } from "../../utils/useMediaQuery";
+import { useEffect } from "react";
 
 export const Navbar = () => {
+  let isPageWide = useMediaQuery("(max-width: 975px)");
+
+  useEffect(() => {
+    if (isPageWide) {
+      setMenuOpen(false);
+    }
+  }, [isPageWide]);
+
   const handleClick = getInTouch();
 
-  const {mobileView, menuOpen, cartOpen, toggleCart, toggleMenuOrCart, setCartOpen} = HeaderCartFunctions()
+  const {
+    mobileView,
+    menuOpen,
+    cartOpen,
+    toggleCart,
+    toggleMenuOrCart,
+    setCartOpen,
+    setMenuOpen,
+    toggleMenu
+  } = HeaderCartFunctions();
 
-  const {quantity} = useCartContext()
+  const { quantity } = useCartContext();
 
   return (
     <header className="header">
       <div className="icons-flex-mobile">
         <Link to={"/"}>
-        <img
-          className="icon-mobile icon-tabler-brand-apple"
-          src={appleLogo}
-          alt="Apple logo"
-        />
+          <img
+            className="icon-mobile icon-tabler-brand-apple"
+            src={appleLogo}
+            alt="Apple logo"
+          />
         </Link>
         <section className="side-right-icons">
           <svg
@@ -55,8 +74,10 @@ export const Navbar = () => {
             <path stroke="none" d="M0 0h24v24H0z" fill="none" />
             <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" />
             <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
-          </svg>     
-          <div className="circle desktop" onClick={toggleCart}>{quantity}</div>
+          </svg>
+          <div className="circle desktop" onClick={toggleCart}>
+            {quantity}
+          </div>
           <Cart
             toggleCart={toggleCart}
             cartOpen={cartOpen}
@@ -80,14 +101,38 @@ export const Navbar = () => {
         />
         <ul className={mobileView ? "nav__ul--show" : "nav__ul"}>
           <li to={"/"} className="nav__li">
-            <Link to={"/"}>Inicio</Link>
-            <Link to={"/shop/iphone"}>iPhone</Link>
-            <Link to={"/shop/ipad"}>iPad</Link>
-            <Link to={"/shop/mac"}>Macbook</Link>
-            <Link to={"/soon"}>Watch</Link>
-            <Link to={"/soon"}>Accessories</Link>
-            <Link target="_blank" to={"https://lautiplug.netlify.app"}>How I've created this</Link>
-            <Link target="_blank" to={"https://github.com/lautiplug"}>Github</Link>
+            <Link onClick={isPageWide && toggleMenu} to={"/"}>
+              Inicio
+            </Link>
+            <Link onClick={isPageWide && toggleMenu} to={"/shop/iphone"}>
+              iPhone
+            </Link>
+            <Link onClick={isPageWide && toggleMenu} to={"/shop/ipad"}>
+              iPad
+            </Link>
+            <Link onClick={isPageWide && toggleMenu} to={"/shop/mac"}>
+              Macbook
+            </Link>
+            <Link onClick={isPageWide && toggleMenu} to={"/soon"}>
+              Watch
+            </Link>
+            <Link onClick={isPageWide && toggleMenu} to={"/soon"}>
+              Accessories
+            </Link>
+            <Link
+              onClick={isPageWide && toggleMenu}
+              target="_blank"
+              to={"https://lautiplug.netlify.app"}
+            >
+              How I've created this
+            </Link>
+            <Link
+              onClick={isPageWide && toggleMenu}
+              target="_blank"
+              to={"https://github.com/lautiplug"}
+            >
+              Github
+            </Link>
             <Link onClick={handleClick}>Contact</Link>
           </li>
         </ul>
@@ -124,7 +169,9 @@ export const Navbar = () => {
             <path d="M6.331 8h11.339a2 2 0 0 1 1.977 2.304l-1.255 8.152a3 3 0 0 1 -2.966 2.544h-6.852a3 3 0 0 1 -2.965 -2.544l-1.255 -8.152a2 2 0 0 1 1.977 -2.304z" />
             <path d="M9 11v-5a3 3 0 0 1 6 0v5" />
           </svg>
-          <div className="circle mobile" onClick={toggleCart}>{quantity}</div>
+          <div className="circle mobile" onClick={toggleCart}>
+            {quantity}
+          </div>
           <Cart
             toggleCart={toggleCart}
             cartOpen={cartOpen}

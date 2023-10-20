@@ -39,6 +39,6 @@ export const HeaderCartFunctions = () => {
     };
 
   return {
-    mobileView, menuOpen, cartOpen, toggleCart, toggleMenu, toggleMenuOrCart, setCartOpen
+    mobileView, menuOpen, cartOpen, toggleCart, toggleMenu, toggleMenuOrCart, setCartOpen, setMenuOpen
   }
 }
