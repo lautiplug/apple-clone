@@ -8,6 +8,7 @@ import { CartDetail } from "../Components/Shopping/Cart/CartDetail";
 import { Mac } from "../Components/Products/Mac/Mac";
 import { MacBuyDetail } from "../Components/Products/Mac/MacBuyDetail";
 import { Ipad } from "../Components/Products/iPad/Ipad";
+import { Soon } from "../Interface/ComingSoon/Soon";
 
 export const AppRoutes = () => {
   
@@ -22,6 +23,7 @@ export const AppRoutes = () => {
         <Route exact path="/shop/mac" element={<Mac title={"Apple Clone > Mac"}/>} />
         <Route exact path="/shop/macbook/:id" element={<MacBuyDetail/>}/>
         <Route exact path="/shop/bag" element={<CartDetail/>}/>
+        <Route exact path="/shop/soon" element={<Soon/>}/>
         <Route />
       </Routes>
     </CartProvider>

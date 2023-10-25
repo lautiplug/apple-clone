@@ -81,7 +81,9 @@
 }
 
 .ipad-layout-card-container picture{
+  width: auto;
   height: 200px;
+  margin: auto  ;
 }
 
 .ipad-col-description h2{

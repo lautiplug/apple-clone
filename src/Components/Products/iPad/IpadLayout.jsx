@@ -57,7 +57,7 @@ export const IpadLayout = ({
             From ${(price / 12).toFixed(2)}/mo. for 12 mo. or ${price}**
           </p>
           <button>
-            <Link to={`/shop/macbook/${id}`}>Buy</Link>
+            <Link to={`/shop/soon`}>Buy</Link>
           </button>
           <a
             className="card-layout-link iphone-link ipad-link"
