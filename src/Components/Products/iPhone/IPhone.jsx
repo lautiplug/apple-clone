@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { heroImgs } from "../../../utils/HeroIndex";
-import { IPhoneHero } from "./IPhoneHero.jsx";
+import { IPhoneHero } from "./IPhoneHero";
 import { IPhoneLayout } from "./IPhoneLayout";
 import "./iphone.css";
 import { Footer } from "../../Footer/Footer";
