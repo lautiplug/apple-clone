@@ -113,10 +113,10 @@ export const Navbar = () => {
             <Link onClick={isPageWide && toggleMenu} to={"/shop/mac"}>
               Macbook
             </Link>
-            <Link onClick={isPageWide && toggleMenu} to={"/soon"}>
+            <Link onClick={isPageWide && toggleMenu} to={"/shop/soon"}>
               Watch
             </Link>
-            <Link onClick={isPageWide && toggleMenu} to={"/soon"}>
+            <Link onClick={isPageWide && toggleMenu} to={"/shop/soon"}>
               Accessories
             </Link>
             <Link
