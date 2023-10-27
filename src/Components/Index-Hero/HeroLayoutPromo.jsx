@@ -13,7 +13,7 @@ export const HeroLayoutPromo = ({
     <main>
       <section className="hero-layout-promo-section">
         <div className="hero-layout-card">
-          <img src={img} alt={title} />
+          <img className="hero-layout-img" src={img} alt={title} />
           <div
             key={id}
             style={{ color: id === 2 || id === 3 ? "black" : "white" }}

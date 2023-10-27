@@ -95,6 +95,11 @@
   width: 100%;
 }
 
+.img-brain-face{
+  width: 150px;
+  height: 150px;
+}
+
 @media (width < 1463px) {
   .card-layout {
     width: 85%;

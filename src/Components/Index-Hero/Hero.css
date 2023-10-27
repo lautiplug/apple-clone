@@ -108,8 +108,8 @@ section {
   grid-area: "content";
 }
 
-.hero-layout-card img {
-  max-width: 100%;
+.hero-layout-img{
+  width: 100%;
   height: 575px;
   object-fit: cover;
   grid-area: content;
