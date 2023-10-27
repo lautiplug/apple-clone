@@ -8,7 +8,7 @@ import { Footer } from "../../Footer/Footer";
 export const IPhone = ({ title }) => {
   // Title
   document.title = title;
-  
+
   const heroimgs = heroImgs.slice(0, 2);
   const [data, setData] = useState([]);
 
@@ -23,7 +23,6 @@ export const IPhone = ({ title }) => {
         console.error("Something went wrong, check out what happened:", error);
       });
   }, []);
-
 
   return (
     <main className="iphone-main">
